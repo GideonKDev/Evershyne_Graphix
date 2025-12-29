@@ -1,4 +1,4 @@
-// Main JavaScript for CyberDesign Cafe
+// Main JavaScript for Evershine Graphixs
 document.addEventListener('DOMContentLoaded', function() {
     
     // Mobile Menu Toggle
@@ -61,6 +61,128 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Gallery Filtering
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    
+    filterBtns.forEach(btn => {
+        btn.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterBtns.forEach(b => b.classList.remove('active'));
+            // Add active class to clicked button
+            this.classList.add('active');
+            
+            const filter = this.dataset.filter;
+            
+            // Filter gallery items
+            galleryItems.forEach(item => {
+                if (filter === 'all' || item.dataset.category === filter) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, 100);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        });
+    });
+    
+    // Lightbox Gallery
+    const lightboxModal = document.querySelector('.lightbox-modal');
+    const lightboxImage = lightboxModal.querySelector('img');
+    const lightboxTitle = lightboxModal.querySelector('.lightbox-info h3');
+    const lightboxDesc = lightboxModal.querySelector('.lightbox-info p');
+    const closeLightbox = lightboxModal.querySelector('.close-lightbox');
+    const nextBtn = lightboxModal.querySelector('.lightbox-nav.next');
+    const prevBtn = lightboxModal.querySelector('.lightbox-nav.prev');
+    
+    let currentGalleryItem = 0;
+    let galleryItemsArray = [];
+    
+    // Initialize gallery items array
+    galleryItems.forEach((item, index) => {
+        galleryItemsArray.push({
+            img: item.querySelector('img').src,
+            title: item.querySelector('.gallery-overlay h3').textContent,
+            desc: item.querySelector('.gallery-overlay p').textContent,
+            category: item.dataset.category
+        });
+        
+        // Add click event to gallery items
+        item.addEventListener('click', () => {
+            openLightbox(index);
+        });
+    });
+    
+    // Open lightbox function
+    function openLightbox(index) {
+        currentGalleryItem = index;
+        updateLightbox();
+        lightboxModal.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+    
+    // Update lightbox content
+    function updateLightbox() {
+        const item = galleryItemsArray[currentGalleryItem];
+        lightboxImage.src = item.img;
+        lightboxImage.alt = item.title;
+        lightboxTitle.textContent = item.title;
+        lightboxDesc.textContent = item.desc;
+    }
+    
+    // Close lightbox
+    closeLightbox.addEventListener('click', () => {
+        lightboxModal.classList.remove('active');
+        document.body.style.overflow = 'auto';
+    });
+    
+    // Close lightbox on background click
+    lightboxModal.addEventListener('click', (e) => {
+        if (e.target === lightboxModal) {
+            lightboxModal.classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+    });
+    
+    // Next image
+    nextBtn.addEventListener('click', () => {
+        currentGalleryItem = (currentGalleryItem + 1) % galleryItemsArray.length;
+        updateLightbox();
+    });
+    
+    // Previous image
+    prevBtn.addEventListener('click', () => {
+        currentGalleryItem = (currentGalleryItem - 1 + galleryItemsArray.length) % galleryItemsArray.length;
+        updateLightbox();
+    });
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (!lightboxModal.classList.contains('active')) return;
+        
+        switch(e.key) {
+            case 'Escape':
+                lightboxModal.classList.remove('active');
+                document.body.style.overflow = 'auto';
+                break;
+            case 'ArrowRight':
+                currentGalleryItem = (currentGalleryItem + 1) % galleryItemsArray.length;
+                updateLightbox();
+                break;
+            case 'ArrowLeft':
+                currentGalleryItem = (currentGalleryItem - 1 + galleryItemsArray.length) % galleryItemsArray.length;
+                updateLightbox();
+                break;
+        }
+    });
+    
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -100,37 +222,6 @@ document.addEventListener('DOMContentLoaded', function() {
             behavior: 'smooth'
         });
     });
-    
-    // View More Services button
-    const viewMoreBtn = document.getElementById('viewMoreServices');
-    const additionalServices = document.querySelectorAll('.service-card:nth-child(n+5)');
-    
-    if (viewMoreBtn && additionalServices.length > 0) {
-        // Hide additional services initially
-        additionalServices.forEach(service => {
-            service.style.display = 'none';
-        });
-        
-        viewMoreBtn.addEventListener('click', function() {
-            // Show all hidden services
-            additionalServices.forEach(service => {
-                service.style.display = 'block';
-                setTimeout(() => {
-                    service.style.opacity = '1';
-                    service.style.transform = 'translateY(0)';
-                }, 100);
-            });
-            
-            // Hide the button
-            this.style.display = 'none';
-            
-            // Scroll to services section
-            document.querySelector('#services').scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        });
-    }
     
     // Service card hover effects
     serviceCards.forEach(card => {
@@ -249,20 +340,73 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(card);
     });
     
+    // Observe gallery items
+    galleryItems.forEach(item => {
+        observer.observe(item);
+    });
+    
+    // Observe team cards
+  // In the JavaScript file, remove or update these parts:
+
+// Remove this block (or comment it out):
+/*
+const teamCards = document.querySelectorAll('.team-card');
+teamCards.forEach(card => {
+    observer.observe(card);
+});
+*/
+
+// And remove from the animations initialization:
+/*
+teamCards.forEach((card, index) => {
+    card.style.transitionDelay = `${index * 0.1}s`;
+    card.classList.add('animated');
+});
+*/
+
+// Instead, just observe the CEO card:
+const ceoCard = document.querySelector('.ceo-card');
+if (ceoCard) {
+    observer.observe(ceoCard);
+}
+
+// Update the animations initialization for CEO section:
+setTimeout(() => {
+    serviceCards.forEach((card, index) => {
+        card.style.transitionDelay = `${index * 0.1}s`;
+        card.classList.add('animated');
+    });
+    
+    galleryItems.forEach((item, index) => {
+        item.style.transitionDelay = `${index * 0.1}s`;
+        item.classList.add('animated');
+    });
+    
+    // CEO card animation
+    if (ceoCard) {
+        ceoCard.style.transitionDelay = '0.3s';
+        ceoCard.classList.add('animated');
+    }
+}, 500);
+    
     // Add CSS for animated class
-    const animationStyle = document.createElement('style');
-    animationStyle.textContent = `
-        .service-card {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: opacity 0.6s ease, transform 0.6s ease;
-        }
+    // const animationStyle = document.createElement('style');
+    // animationStyle.textContent = `
+    //     .service-card,
+    //     .gallery-item,
+    //     .team-card {
+    //         opacity: 0;
+    //         transform: translateY(30px);
+    //         transition: opacity 0.6s ease, transform 0.6s ease;
+    //     }
         
-        .service-card.animated {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    `;
+    //     .service-card.animated,
+    //     .gallery-item.animated,
+    //     .team-card.animated {
+    //         opacity: 1;
+    //         transform: translateY(0);
+    //     }
+    // `;
     document.head.appendChild(animationStyle);
     
     // Initialize animations
@@ -271,25 +415,19 @@ document.addEventListener('DOMContentLoaded', function() {
             card.style.transitionDelay = `${index * 0.1}s`;
             card.classList.add('animated');
         });
-    }, 500);
-    
-    // Pricing card hover effect
-    const pricingCards = document.querySelectorAll('.pricing-card');
-    pricingCards.forEach(card => {
-        card.addEventListener('mouseenter', function() {
-            if (!this.classList.contains('featured')) {
-                this.style.transform = 'translateY(-10px)';
-            }
+        
+        galleryItems.forEach((item, index) => {
+            item.style.transitionDelay = `${index * 0.1}s`;
+            item.classList.add('animated');
         });
         
-        card.addEventListener('mouseleave', function() {
-            if (!this.classList.contains('featured')) {
-                this.style.transform = 'translateY(0)';
-            }
+        teamCards.forEach((card, index) => {
+            card.style.transitionDelay = `${index * 0.1}s`;
+            card.classList.add('animated');
         });
-    });
+    }, 500);
     
-    // Contact form simulation (would be replaced with real form handling)
+    // Contact form simulation
     const contactButtons = document.querySelectorAll('a[href="#contact"], .btn-primary[href="#contact"]');
     contactButtons.forEach(button => {
         button.addEventListener('click', function(e) {
@@ -309,10 +447,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     // Initialize the page
-    console.log('CyberDesign Cafe website initialized successfully!');
+    console.log('Evershine Graphixs website initialized successfully!');
     
     // Add a welcome message
     setTimeout(() => {
-        console.log('Welcome to CyberDesign Cafe - Your Digital Solutions Partner!');
+        console.log('Welcome to Evershine Graphixs - Your Digital Solutions Partner!');
     }, 1000);
 });
