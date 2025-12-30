@@ -454,3 +454,34 @@ setTimeout(() => {
         console.log('Welcome to Evershine Graphixs - Your Digital Solutions Partner!');
     }, 1000);
 });
+// Gallery Load More Functionality
+const loadMoreBtn = document.getElementById('loadMoreGallery');
+const galleryItems = document.querySelectorAll('.gallery-item');
+
+if (loadMoreBtn && galleryItems.length > 8) {
+    // Initially show only 8 items
+    for (let i = 8; i < galleryItems.length; i++) {
+        galleryItems[i].style.display = 'none';
+    }
+    
+    let visibleItems = 8;
+    
+    loadMoreBtn.addEventListener('click', function() {
+        // Show next 4 items
+        for (let i = visibleItems; i < visibleItems + 4 && i < galleryItems.length; i++) {
+            galleryItems[i].style.display = 'block';
+            // Add animation
+            setTimeout(() => {
+                galleryItems[i].style.opacity = '1';
+                galleryItems[i].style.transform = 'translateY(0)';
+            }, 100);
+        }
+        
+        visibleItems += 4;
+        
+        // Hide button if all items are visible
+        if (visibleItems >= galleryItems.length) {
+            loadMoreBtn.style.display = 'none';
+        }
+    });
+}

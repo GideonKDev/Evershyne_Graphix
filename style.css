@@ -1326,6 +1326,17 @@ footer {
     background: linear-gradient(135deg, var(--primary-dark), var(--primary));
     transform: translateX(5px);
 }
+.gallery-item {
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    height: 300px;
+    display: block; /* Ensure all items are visible */
+}
+
+/* Remove any .hidden class related styles */
 
 /* Team Section */
 /* Designer Profile Section */

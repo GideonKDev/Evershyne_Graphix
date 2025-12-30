@@ -199,91 +199,363 @@
     </section>
 
     <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Creative Gallery</h2>
-                <p>Explore our portfolio of exceptional design work</p>
+   <section class="gallery" id="gallery">
+    <div class="container">
+        <div class="section-header">
+            <h2>Our Creative Gallery</h2>
+            <p>Explore our portfolio of exceptional design work</p>
+        </div>
+        
+        <div class="gallery-filter">
+            <button class="filter-btn active" data-filter="all">All Work</button>
+            <button class="filter-btn" data-filter="logo">Logo Design</button>
+            <button class="filter-btn" data-filter="branding">Branding</button>
+            <button class="filter-btn" data-filter="web">Web Design</button>
+            <button class="filter-btn" data-filter="print">Print Design</button>
+            <button class="filter-btn" data-filter="video">Video Projects</button>
+        </div>
+        
+        <div class="gallery-grid">
+            <!-- Logo Design Category -->
+            <div class="gallery-item" data-category="logo">
+                <div class="gallery-image">
+                    <!-- Replace with your logo design image 1 -->
+                    <img src="/gallery_images/logo/logo3.jpeg" alt="Logo Design Project 1">
+                    <div class="gallery-overlay">
+                        <h3>Modern Tech Logo</h3>
+                        <p>Brand Identity Design</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
             </div>
             
-            <div class="gallery-filter">
-                <button class="filter-btn active" data-filter="all">All Work</button>
-                <button class="filter-btn" data-filter="logo">Logo Design</button>
-                <button class="filter-btn" data-filter="branding">Branding</button>
-                <button class="filter-btn" data-filter="web">Web Design</button>
-                <button class="filter-btn" data-filter="print">Print Design</button>
-                <button class="filter-btn" data-filter="video">Video Projects</button>
+            <div class="gallery-item" data-category="logo">
+                <div class="gallery-image">
+                    <!-- Replace with your logo design image 2 -->
+                    <img src="/gallery_images/logo/logo 1.jpeg" alt="Logo Design Project 2">
+                    <div class="gallery-overlay">
+                        <h3>Minimalist Logo</h3>
+                        <p>Clean & Modern Design</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
             </div>
             
-            <div class="gallery-grid">
-                <div class="gallery-item" data-category="logo">
-                    <div class="gallery-image">
-                        <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Logo Design Project">
-                        <div class="gallery-overlay">
-                            <h3>Modern Tech Logo</h3>
-                            <p>Brand Identity Design</p>
-                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
-                        </div>
+            <!-- Branding Category -->
+            <div class="gallery-item" data-category="branding">
+                <div class="gallery-image">
+                    <!-- Replace with your branding project image 1 -->
+                    <img src="/gallery_images/logo/logo 2.jpeg" alt="Branding Project">
+                    <div class="gallery-overlay">
+                        <h3>Corporate Branding</h3>
+                        <p>Complete Brand Package</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
                     </div>
                 </div>
-                
-                <div class="gallery-item" data-category="branding">
-                    <div class="gallery-image">
-                        <img src="https://images.unsplash.com/photo-1567446537710-0e9b8d4d8c4d?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Branding Project">
-                        <div class="gallery-overlay">
-                            <h3>Corporate Branding</h3>
-                            <p>Complete Brand Package</p>
-                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
-                        </div>
+            </div>
+            
+            <div class="gallery-item" data-category="branding">
+                <div class="gallery-image">
+                    <!-- Replace with your branding project image 2 -->
+                    <img src="/gallery_images/logo/logo4.jpeg" alt="Business Card Design">
+                    <div class="gallery-overlay">
+                        <h3>Business Stationery</h3>
+                        <p>Card & Letterhead Design</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
                     </div>
                 </div>
-                
-                <div class="gallery-item" data-category="web">
-                    <div class="gallery-image">
-                        <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Web Design Project">
-                        <div class="gallery-overlay">
-                            <h3>E-commerce Website</h3>
-                            <p>Full Stack Development</p>
-                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
-                        </div>
+            </div>
+            
+            <!-- Web Design Category -->
+            <div class="gallery-item" data-category="web">
+                <div class="gallery-image">
+                    <!-- Replace with your web design project image 1 -->
+                    <img src="/gallery_images/logo/logo5.jpeg" alt="Web Design Project">
+                    <div class="gallery-overlay">
+                        <h3>E-commerce Website</h3>
+                        <p>Full Stack Development</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
                     </div>
                 </div>
-                
-                <div class="gallery-item" data-category="print">
-                    <div class="gallery-image">
-                        <img src="https://images.unsplash.com/photo-1545235617-9465d2a55698?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Print Design">
-                        <div class="gallery-overlay">
-                            <h3>Brochure Design</h3>
-                            <p>Marketing Materials</p>
-                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
-                        </div>
+            </div>
+            
+            <div class="gallery-item" data-category="web">
+                <div class="gallery-image">
+                    <!-- Replace with your web design project image 2 -->
+                    <img src="/gallery_images/logo/logo6.jpeg" alt="Responsive Website">
+                    <div class="gallery-overlay">
+                        <h3>Responsive Website</h3>
+                        <p>Mobile-First Design</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
                     </div>
                 </div>
-                
-                <div class="gallery-item" data-category="video">
-                    <div class="gallery-image">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Video Project">
-                        <div class="gallery-overlay">
-                            <h3>Product Promo Video</h3>
-                            <p>Motion Graphics & Editing</p>
-                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
-                        </div>
+            </div>
+            
+            <!-- Print Design Category -->
+            <div class="gallery-item" data-category="print">
+                <div class="gallery-image">
+                    <!-- Replace with your print design image 1 -->
+                    <img src="/gallery_images/logo/logo7.jpeg" alt="Print Design">
+                    <div class="gallery-overlay">
+                        <h3>Brochure Design</h3>
+                        <p>Marketing Materials</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
                     </div>
                 </div>
-                
-                <div class="gallery-item" data-category="logo">
-                    <div class="gallery-image">
-                        <img src="https://images.unsplash.com/photo-1611162616305-c69b3fa7fbe0?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80" alt="Logo Design">
-                        <div class="gallery-overlay">
-                            <h3>Minimalist Logo</h3>
-                            <p>Clean & Modern Design</p>
-                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
-                        </div>
+            </div>
+            
+            <div class="gallery-item" data-category="print">
+                <div class="gallery-image">
+                    <!-- Replace with your print design image 2 -->
+                    <img src="/gallery_images/logo/logo8.jpeg" alt="Flyer Design">
+                    <div class="gallery-overlay">
+                        <h3>Event Flyer</h3>
+                        <p>Promotional Materials</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Video Projects Category -->
+            <div class="gallery-item" data-category="video">
+                <div class="gallery-image">
+                    <!-- Replace with your video project image 1 -->
+                    <img src="/gallery_images/logo/logo9.jpeg" alt="Video Project">
+                    <div class="gallery-overlay">
+                        <h3>Product Promo Video</h3>
+                        <p>Motion Graphics & Editing</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="video">
+                <div class="gallery-image">
+                    <!-- Replace with your video project image 2 -->
+                    <img src="/gallery_images/logo/logo10.jpeg" alt="Corporate Video">
+                    <div class="gallery-overlay">
+                        <h3>Corporate Video</h3>
+                        <p>Company Profile Video</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="video">
+                <div class="gallery-image">
+                    <!-- Replace with your video project image 2 -->
+                    <img src="/gallery_images/logo/logo11.jpeg" alt="Corporate Video">
+                    <div class="gallery-overlay">
+                        <h3>Corporate Video</h3>
+                        <p>Company Profile Video</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+            
+              <div class="gallery-item" data-category="video">
+                <div class="gallery-image">
+                    <!-- Replace with your video project image 2 -->
+                    <img src="/gallery_images/logo/logo13.jpeg" alt="Corporate Video">
+                    <div class="gallery-overlay">
+                        <h3>Corporate Video</h3>
+                        <p>Company Profile Video</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+              <div class="gallery-item" data-category="video">
+                <div class="gallery-image">
+                    <!-- Replace with your video project image 2 -->
+                    <img src="/gallery_images/branding/branding1.jpeg" alt="Corporate Video">
+                    <div class="gallery-overlay">
+                        <h3>Corporate Video</h3>
+                        <p>Company Profile Video</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="video">
+                <div class="gallery-image">
+                    <!-- Replace with your video project image 2 -->
+                    <img src="/gallery_images/branding/branding2.jpeg" alt="Corporate Video">
+                    <div class="gallery-overlay">
+                        <h3>Corporate Video</h3>
+                        <p>Company Profile Video</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+        
+              <div class="gallery-item" data-category="video">
+                <div class="gallery-image">
+                    <!-- Replace with your video project image 2 -->
+                    <img src="/gallery_images/branding/branding3.jpeg" alt="Corporate Video">
+                    <div class="gallery-overlay">
+                        <h3>Corporate Video</h3>
+                        <p>Company Profile Video</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Additional projects can be added here -->
+            <div class="gallery-item" data-category="logo">
+                <div class="gallery-image">
+                    <!-- Replace with your logo design image 3 -->
+                    <img src="/gallery_images/cards/cards1.jpeg" alt="Restaurant Logo">
+                    <div class="gallery-overlay">
+                        <h3>Restaurant Logo</h3>
+                        <p>Food Industry Branding</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="gallery-item" data-category="logo">
+                <div class="gallery-image">
+                    <!-- Replace with your logo design image 3 -->
+                    <img src="/gallery_images/cards/cards2.jpeg" alt="Restaurant Logo">
+                    <div class="gallery-overlay">
+                        <h3>Restaurant Logo</h3>
+                        <p>Food Industry Branding</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="logo">
+                <div class="gallery-image">
+                    <!-- Replace with your logo design image 3 -->
+                    <img src="/gallery_images/cards/cards3.jpeg" alt="Restaurant Logo">
+                    <div class="gallery-overlay">
+                        <h3>Restaurant Logo</h3>
+                        <p>Food Industry Branding</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="logo">
+                <div class="gallery-image">
+                    <!-- Replace with your logo design image 3 -->
+                    <img src="/gallery_images/lp/lp1.jpeg" alt="Restaurant Logo">
+                    <div class="gallery-overlay">
+                        <h3>Restaurant Logo</h3>
+                        <p>Food Industry Branding</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="logo">
+                <div class="gallery-image">
+                    <!-- Replace with your logo design image 3 -->
+                    <img src="/gallery_images/lp/lp2.jpeg" alt="Restaurant Logo">
+                    <div class="gallery-overlay">
+                        <h3>Restaurant Logo</h3>
+                        <p>Food Industry Branding</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="gallery-item" data-category="branding">
+                <div class="gallery-image">
+                    <!-- Replace with your branding project image 3 -->
+                    <img src="/gallery_images/lp/lp3.jpeg" alt="Social Media Kit">
+                    <div class="gallery-overlay">
+                        <h3>Social Media Kit</h3>
+                        <p>Digital Brand Assets</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="branding">
+                <div class="gallery-image">
+                    <!-- Replace with your branding project image 3 -->
+                    <img src="/gallery_images/machine/machine1.jpeg" alt="Social Media Kit">
+                    <div class="gallery-overlay">
+                        <h3>Social Media Kit</h3>
+                        <p>Digital Brand Assets</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="branding">
+                <div class="gallery-image">
+                    <!-- Replace with your branding project image 3 -->
+                    <img src="/gallery_images/machine/machine2.jpeg" alt="Social Media Kit">
+                    <div class="gallery-overlay">
+                        <h3>Social Media Kit</h3>
+                        <p>Digital Brand Assets</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="branding">
+                <div class="gallery-image">
+                    <!-- Replace with your branding project image 3 -->
+                    <img src="/gallery_images/machine/machine3.jpeg" alt="Social Media Kit">
+                    <div class="gallery-overlay">
+                        <h3>Social Media Kit</h3>
+                        <p>Digital Brand Assets</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="branding">
+                <div class="gallery-image">
+                    <!-- Replace with your branding project image 3 -->
+                    <img src="/gallery_images/machine/machine4.jpeg" alt="Social Media Kit">
+                    <div class="gallery-overlay">
+                        <h3>Social Media Kit</h3>
+                        <p>Digital Brand Assets</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="branding">
+                <div class="gallery-image">
+                    <!-- Replace with your branding project image 3 -->
+                    <img src="/gallery_images/software/sw1.jpeg" alt="Social Media Kit">
+                    <div class="gallery-overlay">
+                        <h3>Social Media Kit</h3>
+                        <p>Digital Brand Assets</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="gallery-item" data-category="branding">
+                <div class="gallery-image">
+                    <!-- Replace with your branding project image 3 -->
+                    <img src="/gallery_images/software/sw2.jpeg" alt="Social Media Kit">
+                    <div class="gallery-overlay">
+                        <h3>Social Media Kit</h3>
+                        <p>Digital Brand Assets</p>
+                        <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+        
+        <!-- Load More Button -->
+        <!-- <div class="load-more-container">
+            <button id="loadMoreGallery" class="btn btn-secondary">
+                <i class="fas fa-plus"></i> Load More Projects
+            </button>
+        </div>
+    </div> -->
+</section>
 
     <!-- Meet Our Team Section -->
      <section class="team" id="team">
@@ -559,7 +831,7 @@
     </footer>
 
     <!-- Lightbox Modal for Gallery -->
-    <div class="lightbox-modal">
+    <!-- <div class="lightbox-modal">
         <div class="lightbox-content">
             <button class="close-lightbox"><i class="fas fa-times"></i></button>
             <img src="" alt="Gallery Image">
@@ -570,7 +842,7 @@
             <button class="lightbox-nav prev"><i class="fas fa-chevron-left"></i></button>
             <button class="lightbox-nav next"><i class="fas fa-chevron-right"></i></button>
         </div>
-    </div>
+    </div> -->
 
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top">
