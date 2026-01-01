@@ -1,28 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Evershine Graphix</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Raleway:wght@700;800&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <!-- Navigation -->
     <header>
         <div class="container">
             <nav class="navbar">
                 <a href="#" class="logo">
-                    <i class="fas fa-palette"></i>
+                    <!-- Replace this line -->
+                    <!-- <i class="fas fa-palette"></i> -->
+                    <!-- With your logo -->
+                    <img src="/images/rd (1).png" alt="Evershine Graphixs Logo" class="logo-img">
                     <span>Evershine</span>Graphixs
                 </a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#services">Services</a></li>
-                    <li><a href="#creative">Creative</a></li>
-                    <li><a href="#digital">Digital</a></li>
-                    <li><a href="#pricing">Pricing</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#team">Meet Our CEO</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <a href="#contact" class="btn btn-primary">Book Now</a>
@@ -37,12 +43,15 @@
     <section class="hero" id="home">
         <div class="container">
             <div class="hero-content">
-                <h1>Professional <span class="highlight">Digital</span> Solutions for <span class="highlight">Modern</span> Businesses</h1>
-                <p>Your comprehensive destination for graphic design, software solutions, creative services, and premium cyber cafe facilities. Empowering businesses, students, and professionals with cutting-edge digital services.</p>
+                <h1>Professional <span class="highlight">Digital</span> Solutions for <span
+                        class="highlight">Modern</span> Businesses</h1>
+                <p>Your comprehensive destination for graphic design, software solutions, creative services, and premium
+                    cyber cafe facilities. Empowering businesses, students, and professionals with cutting-edge digital
+                    services.</p>
                 <div class="hero-buttons">
                     <a href="#services" class="btn btn-primary">Explore All Services</a>
+                    <a href="#gallery" class="btn btn-secondary">View Our Work</a>
                     <a href="#contact" class="btn btn-secondary">Book Consultation</a>
-                    <a href="#pricing" class="btn btn-secondary">View Pricing</a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat">
@@ -86,7 +95,7 @@
                     <button class="category-tab" data-category="digital">Digital</button>
                 </div>
             </div>
-            
+
             <div class="services-grid">
                 <!-- Graphic Design Services -->
                 <div class="service-card" data-category="design">
@@ -104,10 +113,6 @@
                         <li><i class="fas fa-check-circle"></i> Packaging & Label Design</li>
                         <li><i class="fas fa-check-circle"></i> Infographic Design</li>
                     </ul>
-                    <!-- <div class="service-footer">
-                        <span class="service-price">Starting at $50</span>
-                        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
-                    </div> -->
                 </div>
 
                 <!-- Software Installation Services -->
@@ -125,10 +130,6 @@
                         <li><i class="fas fa-check-circle"></i> Database Software Setup</li>
                         <li><i class="fas fa-check-circle"></i> Custom Software Configuration</li>
                     </ul>
-                    <!-- <div class="service-footer">
-                        <span class="service-price">Starting at $30</span>
-                        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
-                    </div> -->
                 </div>
 
                 <!-- Cyber Cafe Services -->
@@ -147,10 +148,6 @@
                         <li><i class="fas fa-check-circle"></i> Meeting Room Facilities</li>
                         <li><i class="fas fa-check-circle"></i> Technical Support & Training</li>
                     </ul>
-                    <!-- <div class="service-footer">
-                        <span class="service-price">From $5/hour</span>
-                        <a href="#contact" class="service-link">Book Now <i class="fas fa-arrow-right"></i></a>
-                    </div> -->
                 </div>
 
                 <!-- Web & Digital Services -->
@@ -168,10 +165,6 @@
                         <li><i class="fas fa-check-circle"></i> Google Analytics Configuration</li>
                         <li><i class="fas fa-check-circle"></i> Website Maintenance</li>
                     </ul>
-                    <!-- <div class="service-footer">
-                        <span class="service-price">Starting at $150</span>
-                        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
-                    </div> -->
                 </div>
 
                 <!-- Video & Animation Services -->
@@ -190,10 +183,27 @@
                         <li><i class="fas fa-check-circle"></i> Audio Editing & Mixing</li>
                         <li><i class="fas fa-check-circle"></i> Video Marketing Strategy</li>
                     </ul>
-                    <!-- <div class="service-footer">
-                        <span class="service-price">Starting at $75</span>
-                        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
-                    </div> -->
+                </div>
+
+                                <!-- Printer Maintenance & Repair Services -->
+                <div class="service-card" data-category="cyber">
+                    <div class="service-icon">
+                        <i class="fas fa-print"></i>
+                    </div>
+                    <h3>Printer Maintenance & Repair</h3>
+                    <div class="service-badge">Expert Service</div>
+                    <ul class="service-list">
+                        <li><i class="fas fa-check-circle"></i> Printer Installation & Setup</li>
+                        <li><i class="fas fa-check-circle"></i> Routine Maintenance & Cleaning</li>
+                        <li><i class="fas fa-check-circle"></i> Ink/Toner Replacement & Refilling</li>
+                        <li><i class="fas fa-check-circle"></i> Paper Jam Resolution</li>
+                        <li><i class="fas fa-check-circle"></i> Network Printer Configuration</li>
+                        <li><i class="fas fa-check-circle"></i> Driver Installation & Updates</li>
+                        <li><i class="fas fa-check-circle"></i> Hardware Repair & Parts Replacement</li>
+                        <li><i class="fas fa-check-circle"></i> Wireless Printer Setup</li>
+                        <li><i class="fas fa-check-circle"></i> Print Quality Troubleshooting</li>
+                        <li><i class="fas fa-check-circle"></i> Preventive Maintenance Packages</li>
+                    </ul>
                 </div>
 
                 <!-- Business Solutions -->
@@ -211,115 +221,583 @@
                         <li><i class="fas fa-check-circle"></i> Corporate Branding</li>
                         <li><i class="fas fa-check-circle"></i> Investor Pitch Decks</li>
                     </ul>
-                    <!-- <div class="service-footer">
-                        <span class="service-price">Starting at $100</span>
-                        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
-                    </div> -->
                 </div>
-
-                <!-- 3D & AR/VR Services -->
-                <div class="service-card" data-category="creative">
-                    <div class="service-icon">
-                        <i class="fas fa-cube"></i>
-                    </div>
-                    <h3>3D & AR/VR Services</h3>
-                    <div class="service-badge">Advanced</div>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> 3D Modeling & Rendering</li>
-                        <li><i class="fas fa-check-circle"></i> Product Visualization</li>
-                        <li><i class="fas fa-check-circle"></i> AR Filter Creation</li>
-                        <li><i class="fas fa-check-circle"></i> VR Experience Design</li>
-                        <li><i class="fas fa-check-circle"></i> Architectural Visualization</li>
-                        <li><i class="fas fa-check-circle"></i> 3D Printing File Preparation</li>
-                        <li><i class="fas fa-check-circle"></i> Interactive 3D Presentations</li>
-                    </ul>
-                    <!-- <div class="service-footer">
-                        <span class="service-price">Starting at $200</span>
-                        <a href="#contact" class="service-link">Get Quote <i class="fas fa-arrow-right"></i></a>
-                    </div> -->
-                </div>
-
-                <!-- Training & Workshops -->
-                <div class="service-card" data-category="cyber">
-                    <div class="service-icon">
-                        <i class="fas fa-chalkboard-teacher"></i>
-                    </div>
-                    <h3>Training & Workshops</h3>
-                    <ul class="service-list">
-                        <li><i class="fas fa-check-circle"></i> Basic Computer Literacy</li>
-                        <li><i class="fas fa-check-circle"></i> Graphic Design Workshops</li>
-                        <li><i class="fas fa-check-circle"></i> Software Training Sessions</li>
-                        <li><i class="fas fa-check-circle"></i> Digital Marketing Courses</li>
-                        <li><i class="fas fa-check-circle"></i> Video Editing Classes</li>
-                        <li><i class="fas fa-check-circle"></i> Web Development Bootcamps</li>
-                        <li><i class="fas fa-check-circle"></i> One-on-One Coaching</li>
-                    </ul>
-                    <!-- <div class="service-footer">
-                        <span class="service-price">From $25/hour</span>
-                        <a href="#contact" class="service-link">Book Session <i class="fas fa-arrow-right"></i></a>
-                    </div> -->
-                </div>
-            </div>
-
-            <div class="view-more-container">
-                <button id="viewMoreServices" class="btn btn-secondary">
-                    <i class="fas fa-plus"></i> Load More Services
-                </button>
             </div>
         </div>
+
+        
     </section>
 
-    <!-- Additional Services Grid -->
-    <section class="additional-services" id="creative">
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
         <div class="container">
             <div class="section-header">
-                <h2>Specialized Creative Services</h2>
-                <p>Advanced creative solutions for modern businesses</p>
+                <h2>Our Creative Gallery</h2>
+                <p>Explore our portfolio of exceptional design work</p>
+            </div>
+
+            <div class="gallery-filter">
+                <button class="filter-btn active" data-filter="all">All Work</button>
+                <button class="filter-btn" data-filter="logo">Logo Design</button>
+                <button class="filter-btn" data-filter="branding">Branding</button>
+                <button class="filter-btn" data-filter="web">Web Design</button>
+                <button class="filter-btn" data-filter="print">Print Design</button>
+                <button class="filter-btn" data-filter="software">Software Installation</button>
+            </div>
+
+            <div class="gallery-grid">
+                <!-- Logo Design Category -->
+                <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 1 -->
+                        <img src="/gallery_images/logo/logo3.jpeg" alt="Logo Design Project 1">
+                        <div class="gallery-overlay">
+                            <h3>Modern Tech Logo</h3>
+                            <p>Brand Identity Design</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 2 -->
+                        <img src="/gallery_images/logo/logo 1.jpeg" alt="Logo Design Project 2">
+                        <div class="gallery-overlay">
+                            <h3>Minimalist Logo</h3>
+                            <p>Clean & Modern Design</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Branding Category -->
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <!-- Replace with your branding project image 1 -->
+                        <img src="/gallery_images/logo/logo 2.jpeg" alt="Branding Project">
+                        <div class="gallery-overlay">
+                            <h3>Modern Business Logo</h3>
+                            <p>Hand-Sanitizer logo design</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <!-- Replace with your branding project image 2 -->
+                        <img src="/gallery_images/logo/logo4.jpeg" alt="Business Card Design">
+                        <div class="gallery-overlay">
+                            <h3>Overall Services Design</h3>
+                            <p>Complete Brand Package</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Web Design Category -->
+                <div class="gallery-item" data-category="web">
+                    <div class="gallery-image">
+                        <!-- Replace with your web design project image 1 -->
+                        <img src="/gallery_images/logo/logo5.jpeg" alt="Web Design Project">
+                        <div class="gallery-overlay">
+                            <h3>Sports Logo</h3>
+                            <p>With branding</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="web">
+                    <div class="gallery-image">
+                        <!-- Replace with your web design project image 2 -->
+                        <img src="/gallery_images/logo/logo6.jpeg" alt="Responsive Website">
+                        <div class="gallery-overlay">
+                            <h3>Business Logo</h3>
+                            <p>Mobile-First Design</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Print Design Category -->
+                <div class="gallery-item" data-category="print">
+                    <div class="gallery-image">
+                        <!-- Replace with your print design image 1 -->
+                        <img src="/gallery_images/logo/logo7.jpeg" alt="Print Design">
+                        <div class="gallery-overlay">
+                            <h3>Church Logo</h3>
+                            <p>For letter-heads and church posters</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="print">
+                    <div class="gallery-image">
+                        <!-- Replace with your print design image 2 -->
+                        <img src="/gallery_images/logo/logo8.jpeg" alt="Flyer Design">
+                        <div class="gallery-overlay">
+                            <h3>Notebooks Design</h3>
+                            <p>Promotional Materials</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Video Projects Category -->
+                <div class="gallery-item" data-category="video">
+                    <div class="gallery-image">
+                        <!-- Replace with your video project image 1 -->
+                        <img src="/gallery_images/logo/logo9.jpeg" alt="Video Project">
+                        <div class="gallery-overlay">
+                            <h3>Product Promo Logo</h3>
+                            <p>Coffee product promotion logo</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="video">
+                    <div class="gallery-image">
+                        <!-- Replace with your video project image 2 -->
+                        <img src="/gallery_images/logo/logo10.jpeg" alt="Corporate Video">
+                        <div class="gallery-overlay">
+                            <h3>Church Logo</h3>
+                            <p>Church branding logo</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="video">
+                    <div class="gallery-image">
+                        <!-- Replace with your video project image 2 -->
+                        <img src="/gallery_images/logo/logo11.jpeg" alt="Corporate Video">
+                        <div class="gallery-overlay">
+                            <h3>Church Logo</h3>
+                            <p>Church branding logo (central Rift Baptist Church)</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="video">
+                    <div class="gallery-image">
+                        <!-- Replace with your video project image 2 -->
+                        <img src="/gallery_images/logo/logo13.jpeg" alt="Corporate Video">
+                        <div class="gallery-overlay">
+                            <h3>Modern Church Logo</h3>
+                            <p>Church branding logo (central Rift Baptist Church)</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="video">
+                    <div class="gallery-image">
+                        <!-- Replace with your video project image 2 -->
+                        <img src="/gallery_images/branding/branding1.jpeg" alt="Corporate Video">
+                        <div class="gallery-overlay">
+                            <h3>Office branding </h3>
+                            <p>Land point survey Office branding</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="video">
+                    <div class="gallery-image">
+                        <!-- Replace with your video project image 2 -->
+                        <img src="/gallery_images/branding/branding2.jpeg" alt="Corporate Video">
+                        <div class="gallery-overlay">
+                            <h3>Office branding</h3>
+                            <p>Land point survey Office branding</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="video">
+                    <div class="gallery-image">
+                        <!-- Replace with your video project image 2 -->
+                        <img src="/gallery_images/branding/branding3.jpeg" alt="Corporate Video">
+                        <div class="gallery-overlay">
+                            <h3>Office branding</h3>
+                            <p>Land point survey Office branding</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Additional projects can be added here -->
+                <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 3 -->
+                        <img src="/gallery_images/cards/cards1.jpeg" alt="Restaurant Logo">
+                        <div class="gallery-overlay">
+                            <h3>School ID cards</h3>
+                            <p>Kenya Highland University student ID cards</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 3 -->
+                        <img src="/gallery_images/cards/cards2.jpeg" alt="Restaurant Logo">
+                        <div class="gallery-overlay">
+                            <h3>School ID cards</h3>
+                            <p>Kenya Highland University student ID cards</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 3 -->
+                        <img src="/gallery_images/cards/cards3.jpeg" alt="Restaurant Logo">
+                        <div class="gallery-overlay">
+                            <h3>Restaurant Key holders</h3>
+                            <p>Sahara Gardens Room key holders</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 3 -->
+                        <img src="/gallery_images/lp/lp1.jpeg" alt="Restaurant Logo">
+                        <div class="gallery-overlay">
+                            <h3>Large Format Printing</h3>
+                            <p>Bill boards design printing</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 3 -->
+                        <img src="/gallery_images/lp/lp2.jpeg" alt="Restaurant Logo">
+                        <div class="gallery-overlay">
+                            <h3>Large format printing</h3>
+                            <p>Printing large format posters</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <!-- Replace with your branding project image 3 -->
+                        <img src="/gallery_images/lp/lp3.jpeg" alt="Social Media Kit">
+                        <div class="gallery-overlay">
+                            <h3>Social Media Kit</h3>
+                            <p>Digital Brand Assets</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <!-- Replace with your branding project image 3 -->
+                        <img src="/gallery_images/machine/machine1.jpeg" alt="Social Media Kit">
+                        <div class="gallery-overlay">
+                            <h3>Social Media Kit</h3>
+                            <p>Digital Brand Assets</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <!-- Replace with your branding project image 3 -->
+                        <img src="/gallery_images/machine/machine2.jpeg" alt="Social Media Kit">
+                        <div class="gallery-overlay">
+                            <h3>Social Media Kit</h3>
+                            <p>Digital Brand Assets</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <!-- Replace with your branding project image 3 -->
+                        <img src="/gallery_images/machine/machine3.jpeg" alt="Social Media Kit">
+                        <div class="gallery-overlay">
+                            <h3>Social Media Kit</h3>
+                            <p>Digital Brand Assets</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <!-- Replace with your branding project image 3 -->
+                        <img src="/gallery_images/machine/machine4.jpeg" alt="Social Media Kit">
+                        <div class="gallery-overlay">
+                            <h3>Social Media Kit</h3>
+                            <p>Digital Brand Assets</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <!-- Replace with your branding project image 3 -->
+                        <img src="/gallery_images/software/sw1.jpeg" alt="Social Media Kit">
+                        <div class="gallery-overlay">
+                            <h3>Social Media Kit</h3>
+                            <p>Digital Brand Assets</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- more services -->
+                 <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 3 -->
+                        <img src="/gallery_images/branding/branding4.jpeg"alt="Restaurant Logo">
+                        <div class="gallery-overlay">
+                            <h3>School ID cards</h3>
+                            <p>Kenya Highland University student ID cards</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 3 -->
+                        <img src="/gallery_images/branding/branding5.jpeg" alt="Restaurant Logo">
+                        <div class="gallery-overlay">
+                            <h3>School ID cards</h3>
+                            <p>Kenya Highland University student ID cards</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 3 -->
+                        <img src="/gallery_images/branding/branding6.jpeg" alt="Restaurant Logo">
+                        <div class="gallery-overlay">
+                            <h3>School ID cards</h3>
+                            <p>Kenya Highland University student ID cards</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 3 -->
+                        <img src="/gallery_images/branding/branding7.jpeg" alt="Restaurant Logo">
+                        <div class="gallery-overlay">
+                            <h3>School ID cards</h3>
+                            <p>Kenya Highland University student ID cards</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 3 -->
+                        <img src="/gallery_images/branding/branding8.jpeg" alt="Restaurant Logo">
+                        <div class="gallery-overlay">
+                            <h3>School ID cards</h3>
+                            <p>Kenya Highland University student ID cards</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 3 -->
+                        <img src="/gallery_images/branding/branding9.jpeg" alt="Restaurant Logo">
+                        <div class="gallery-overlay">
+                            <h3>School ID cards</h3>
+                            <p>Kenya Highland University student ID cards</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                  <div class="gallery-item" data-category="logo">
+                    <div class="gallery-image">
+                        <!-- Replace with your logo design image 3 -->
+                        <img src="/gallery_images/branding/branding10.jpeg" alt="Restaurant Logo">
+                        <div class="gallery-overlay">
+                            <h3>School ID cards</h3>
+                            <p>Kenya Highland University student ID cards</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item" data-category="branding">
+                    <div class="gallery-image">
+                        <!-- Replace with your branding project image 3 -->
+                        <img src="/gallery_images/software/sw2.jpeg" alt="Social Media Kit">
+                        <div class="gallery-overlay">
+                            <h3>Social Media Kit</h3>
+                            <p>Digital Brand Assets</p>
+                            <button class="view-project"><i class="fas fa-expand"></i> View Project</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             
-            <div class="additional-grid">
-                <div class="additional-card">
-                    <i class="fas fa-robot"></i>
-                    <h4>AI-Powered Design</h4>
-                    <p>AI-generated graphics, content creation, and automation solutions</p>
+            
+            <!-- Load More Button -->
+            <!-- <div class="load-more-container">
+            <button id="loadMoreGallery" class="btn btn-secondary">
+                <i class="fas fa-plus"></i> Load More Projects
+            </button>
+        </div>
+    </div> -->
+    </div>
+    </section>
+
+    <!-- Meet Our Team Section -->
+    <section class="team" id="team">
+        <div class="container">
+            <div class="section-header">
+                <h2>Creative Director</h2>
+                <p>The visionary leader behind Evershine Graphixs</p>
+            </div>
+
+            <div class="designer-profile">
+                <!-- <div class="designer-badge">
+                    <i class="fas fa-award"></i>
+                    <span>8+ Years Experience</span>
+                </div> -->
+                <div class="designer-image">
+                    <img src="./images/kevin.jpeg" alt="CEO - Kevin Ngetich">
+
                 </div>
-                <div class="additional-card">
-                    <i class="fas fa-mobile-alt"></i>
-                    <h4>App Interface Design</h4>
-                    <p>Mobile app UI/UX design and prototype development</p>
-                </div>
-                <div class="additional-card">
-                    <i class="fas fa-gamepad"></i>
-                    <h4>Game Design Services</h4>
-                    <p>2D/3D game assets, level design, and game development</p>
-                </div>
-                <div class="additional-card">
-                    <i class="fas fa-photo-video"></i>
-                    <h4>Photography Services</h4>
-                    <p>Product photography, editing, and photo restoration</p>
-                </div>
-                <div class="additional-card">
-                    <i class="fas fa-podcast"></i>
-                    <h4>Podcast Production</h4>
-                    <p>Recording, editing, and publishing podcast episodes</p>
-                </div>
-                <div class="additional-card">
-                    <i class="fas fa-shopping-cart"></i>
-                    <h4>E-commerce Solutions</h4>
-                    <p>Complete online store setup and management</p>
+                <div class="designer-details">
+                    <h3>Kevin Ngetich</h3>
+                    <p class="designer-title">Founder, CEO & Creative Director</p>
+
+                    <div class="designer-qualifications">
+                        <div class="qualification">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <strong>BSc. Computer Science & Graphic Design</strong>
+                                <!-- <span>University of Nairobi</span> -->
+                            </div>
+                        </div>
+                        <div class="qualification">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <strong>Adobe Certified Expert</strong>
+                                <span>Creative Suite Specialist</span>
+                            </div>
+                        </div>
+                        <div class="qualification">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <strong>Specialization</strong>
+                                <span>Brand Identity & Digital Strategy</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="designer-bio">
+                        Kevin Ngetich is a highly experienced creative professional with over 8 years in digital design
+                        and technology.
+                        He founded Evershine Graphixs with a vision to provide exceptional digital solutions to
+                        businesses across Kenya.
+                        Kevin is passionate about turning creative visions into reality and believes in building
+                        long-term partnerships
+                        with clients to help them achieve their digital goals.
+                    </div>
+
+                    <div class="designer-stats">
+                        <div class="stat">
+                            <strong>1,000+</strong>
+                            <span>Happy Clients</span>
+                        </div>
+                        <div class="stat">
+                            <strong>2,500+</strong>
+                            <span>Projects Completed</span>
+                        </div>
+                        <div class="stat">
+                            <strong>24/7</strong>
+                            <span>Support Available</span>
+                        </div>
+                    </div>
+
+                    <div class="designer-expertise">
+                        <h4>Core Expertise</h4>
+                        <div class="skills-grid">
+                            <div class="skill">
+                                <div class="skill-name">Graphic Design <span>95%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Digital Strategy <span>90%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Web Development <span>85%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Client Relations <span>95%</span></div>
+                                <div class="skill-bar">
+                                    <div class="skill-level" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="designer-social">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>Connect on LinkedIn</span>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-behance"></i>
+                            <span>View Portfolio</span>
+                        </a>
+                        <a href="mailto:kevin@evershinegraphixs.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email Directly</span>
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
     <!-- Features Section -->
-    <section class="features" id="digital">
+    <section class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Why Choose CyberDesign Cafe</h2>
+                <h2>Why Choose Evershine Graphixs</h2>
                 <p>We deliver excellence in every service with unmatched benefits</p>
             </div>
-            
+
             <div class="features-grid">
                 <div class="feature">
                     <i class="fas fa-bolt"></i>
@@ -355,70 +833,6 @@
         </div>
     </section>
 
-    <!-- Pricing Section -->
-    <!-- <section class="pricing" id="pricing">
-        <div class="container"> -->
-            <!-- <div class="section-header">
-                <h2>Flexible Pricing Plans</h2>
-                <p>Choose the perfect plan for your needs</p>
-            </div>
-            
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Basic Package</h3>
-                        <div class="price">$99<span>/month</span></div>
-                        <p>For individuals & startups</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 10 hours Cyber Cafe Access</li>
-                        <li><i class="fas fa-check"></i> 2 Graphic Design Tasks</li>
-                        <li><i class="fas fa-check"></i> Basic Software Installation</li>
-                        <li><i class="fas fa-check"></i> Email Support</li>
-                        <li><i class="fas fa-times"></i> Priority Support</li>
-                        <li><i class="fas fa-times"></i> Video Editing Services</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                </div>
-                
-                <div class="pricing-card featured">
-                    <div class="pricing-badge">Most Popular</div>
-                    <div class="pricing-header">
-                        <h3>Professional Package</h3>
-                        <div class="price">$299<span>/month</span></div>
-                        <p>For growing businesses</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> 40 hours Cyber Cafe Access</li>
-                        <li><i class="fas fa-check"></i> 10 Graphic Design Tasks</li>
-                        <li><i class="fas fa-check"></i> Full Software Solutions</li>
-                        <li><i class="fas fa-check"></i> Priority Email & Chat Support</li>
-                        <li><i class="fas fa-check"></i> 5 hours Video Editing</li>
-                        <li><i class="fas fa-check"></i> Social Media Management</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Get Started</a>
-                </div>
-                
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>Enterprise Package</h3>
-                        <div class="price">Custom<span>/month</span></div>
-                        <p>For large organizations</p>
-                    </div>
-                    <ul class="pricing-features">
-                        <li><i class="fas fa-check"></i> Unlimited Cafe Access</li>
-                        <li><i class="fas fa-check"></i> Unlimited Design Tasks</li>
-                        <li><i class="fas fa-check"></i> Dedicated Support Team</li>
-                        <li><i class="fas fa-check"></i> 24/7 Phone Support</li>
-                        <li><i class="fas fa-check"></i> Full Creative Services</li>
-                        <li><i class="fas fa-check"></i> Custom Software Solutions</li>
-                    </ul>
-                    <a href="#contact" class="btn btn-primary">Contact Sales</a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- Contact CTA -->
     <section class="contact-cta" id="contact">
         <div class="container">
@@ -446,16 +860,16 @@
                         <i class="fas fa-map-marker-alt"></i>
                         <div>
                             <h4>Visit Our Center</h4>
-                            <p>2Togom Plaza, Opposite Total Kipsigis</p>
+                            <p>Togom Plaza, Opposite Total Kipsigis</p>
                             <p>Open 8 AM - 10 PM Daily</p>
                         </div>
                     </div>
                 </div>
                 <div class="cta-buttons">
-                    <a href="tel:+15551234567" class="btn btn-primary btn-large">
+                    <a href="tel:+254797617455" class="btn btn-primary btn-large">
                         <i class="fas fa-phone"></i> Call Now
                     </a>
-                    <a href="mailto:info@cyberdesigncafe.com" class="btn btn-secondary btn-large">
+                    <a href="mailto:evershinegraphixs@gmail.com" class="btn btn-secondary btn-large">
                         <i class="fas fa-envelope"></i> Email Us
                     </a>
                 </div>
@@ -469,10 +883,14 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <a href="#" class="logo">
-                        <i class="fas fa-palette"></i>
-                        <span>CyberDesign</span>Cafe
+                        <!-- Replace this line -->
+                        <!-- <i class="fas fa-palette"></i> -->
+                        <!-- With your logo -->
+                        <img src="/images/rd (1).png" alt="Evershine Graphixs Logo" class="logo-img">
+                        <span>Evershine</span>Graphixs
                     </a>
-                    <p>Providing professional digital solutions since 2019. Your trusted partner for all graphic design, software, creative, and cyber needs.</p>
+                    <p>Providing professional digital solutions since 2019. Your trusted partner for all graphic design,
+                        software, creative, and cyber needs.</p>
                     <div class="social-links">
                         <a href="#"><i class="fab fa-facebook"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
@@ -482,31 +900,32 @@
                         <a href="#"><i class="fab fa-whatsapp"></i></a>
                     </div>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
                         <li><a href="#home">Home</a></li>
-                        <li><a href="#services">All Services</a></li>
-                        <li><a href="#creative">Creative Services</a></li>
-                        <li><a href="#digital">Digital Solutions</a></li>
-                        <li><a href="#pricing">Pricing Plans</a></li>
-                        <li><a href="#contact">Contact Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Our Services</h4>
-                    <ul>
-                        <li><a href="#services">Graphic Design</a></li>
-                        <li><a href="#services">Software Installation</a></li>
-                        <li><a href="#services">Cyber Cafe</a></li>
-                        <li><a href="#services">Web Development</a></li>
-                        <li><a href="#services">Video Production</a></li>
-                        <li><a href="#services">Business Solutions</a></li>
-                    </ul>
+                    <div class="footer-section">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="#gallery">Gallery</a></li>
+                            <li><a href="#team">Meet Our CEO</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
                 </div>
-                
+
                 <div class="footer-section">
                     <h4>Business Hours</h4>
                     <ul class="business-hours">
@@ -522,13 +941,29 @@
                     </div>
                 </div>
             </div>
-            
+
             <div class="footer-bottom">
-                <p>&copy; 2023 CyberDesign Cafe. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-                <p>Designed with <i class="fas fa-heart" style="color: var(--primary);"></i> by Evershine Graphix Team</p>
+                <p>&copy; 2023 Evershine Graphixs. All rights reserved. | <a href="#">Privacy Policy</a> | <a
+                        href="#">Terms of Service</a></p>
+                <p>Designed with <i class="fas fa-heart" style="color: var(--primary);"></i> by Evershine Graphix Team
+                </p>
             </div>
         </div>
     </footer>
+
+    <!-- Lightbox Modal for Gallery -->
+    <div class="lightbox-modal">
+        <div class="lightbox-content">
+            <button class="close-lightbox"><i class="fas fa-times"></i></button>
+            <img src="" alt="Gallery Image">
+            <div class="lightbox-info">
+                <h3></h3>
+                <p></p>
+            </div>
+            <button class="lightbox-nav prev"><i class="fas fa-chevron-left"></i></button>
+            <button class="lightbox-nav next"><i class="fas fa-chevron-right"></i></button>
+        </div>
+    </div>
 
     <!-- Back to Top Button -->
     <button id="backToTop" class="back-to-top">
@@ -537,4 +972,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
