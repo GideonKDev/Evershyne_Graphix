@@ -965,6 +965,7 @@ footer {
     display: flex;
     gap: 15px;
     margin-top: 25px;
+    border-radius: 50%;
 }
 
 .social-links a {
