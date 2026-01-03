@@ -484,7 +484,7 @@ if (loadMoreBtn && galleryItems.length > 8) {
             loadMoreBtn.style.display = 'none';
         }
     });
-// }// Register Service Worker for PWA
+}// Register Service Worker for PWA
 // if ('serviceWorker' in navigator) {
 //   window.addEventListener('load', () => {
 //     navigator.serviceWorker.register('/sw.js')
