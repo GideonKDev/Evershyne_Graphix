@@ -549,3 +549,42 @@ if (loadMoreBtn && galleryItems.length > 8) {
   
 //   document.body.appendChild(installBtn);
 // }
+// Show modal on every page load/refresh
+document.addEventListener('DOMContentLoaded', function() {
+  // Show modal with a small delay for better UX
+  setTimeout(() => {
+    const modal = document.getElementById('offerModal');
+    modal.style.display = 'flex';
+  }, 500);
+  
+  // Add event listener to the contact button
+  const contactButton = document.querySelector('.offer-button');
+  if (contactButton) {
+    contactButton.addEventListener('click', function(e) {
+      e.preventDefault(); // Prevent default link behavior
+      
+      // Close the modal
+      const modal = document.getElementById('offerModal');
+      modal.style.display = 'none';
+      
+      // Scroll to contact section (optional)
+      const contactSection = document.querySelector('#contact');
+      if (contactSection) {
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    });
+  }
+});
+
+// Close modal for X and outside click
+document.addEventListener('click', function(e) {
+  const modal = document.getElementById('offerModal');
+  
+  if (e.target.classList.contains('close-btn')) {
+    modal.style.display = 'none';
+  }
+  
+  if (e.target === modal) {
+    modal.style.display = 'none';
+  }
+});
