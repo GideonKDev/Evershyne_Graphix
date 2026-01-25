@@ -2280,18 +2280,17 @@ footer {
 /* Animation for animated class */
 .service-card,
 .gallery-item,
-.designer-profile {
+ {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease, transform 0.6s ease;
-}
+} 
 
 .service-card.animated,
-.gallery-item.animated,
-.designer-profile.animated {
+.gallery-item.animated{
     opacity: 1;
     transform: translateY(0);
-}
+} 
 
 /* Notification styles */
 .notification {
@@ -2324,28 +2323,4 @@ footer {
 @keyframes slideOut {
     from { transform: translateX(0); opacity: 1; }
     to { transform: translateX(100%); opacity: 0; }
-}
-/* Team Section */
-.team {
-    padding: 120px 0;
-    background: var(--white);
-    position: relative;
-    overflow: hidden;
-}
-
-.team .container {
-    position: relative;
-    z-index: 1;
-}
-
-/* Add a subtle background pattern */
-.team::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(255, 107, 53, 0.03) 0%, transparent 100%);
-    z-index: 0;
 }
