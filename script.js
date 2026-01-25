@@ -588,3 +588,29 @@ document.addEventListener('click', function(e) {
     modal.style.display = 'none';
   }
 });
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("locationPopup");
+  const closeBtn = document.querySelector(".close-location-popup");
+
+  if (!localStorage.getItem("locationPopupShown")) {
+    popup.style.display = "flex";
+    localStorage.setItem("locationPopupShown", "true");
+  }
+
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});
+const mapBtn = document.querySelector('#locationPopup a');
+
+if (mapBtn) {
+  mapBtn.addEventListener('click', () => {
+    document.getElementById('locationPopup').style.display = 'none';
+  });
+}

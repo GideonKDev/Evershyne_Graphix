@@ -40,3 +40,22 @@
 //     })
 //   );
 // });
+document.addEventListener("DOMContentLoaded", () => {
+  const popup = document.getElementById("locationPopup");
+  const closeBtn = document.querySelector(".close-location-popup");
+
+  if (!localStorage.getItem("locationPopupShown")) {
+    popup.style.display = "flex";
+    localStorage.setItem("locationPopupShown", "true");
+  }
+
+  closeBtn.addEventListener("click", () => {
+    popup.style.display = "none";
+  });
+
+  popup.addEventListener("click", (e) => {
+    if (e.target === popup) {
+      popup.style.display = "none";
+    }
+  });
+});
