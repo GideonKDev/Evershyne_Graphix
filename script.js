@@ -588,14 +588,16 @@ document.addEventListener('click', function(e) {
     modal.style.display = 'none';
   }
 });
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const popup = document.getElementById("locationPopup");
   const closeBtn = document.querySelector(".close-location-popup");
 
-  if (!localStorage.getItem("locationPopupShown")) {
+  // Show popup after 2 seconds delay
+  setTimeout(() => {
     popup.style.display = "flex";
-    localStorage.setItem("locationPopupShown", "true");
-  }
+  }, 2000);
 
   closeBtn.addEventListener("click", () => {
     popup.style.display = "none";
@@ -606,11 +608,15 @@ document.addEventListener("DOMContentLoaded", () => {
       popup.style.display = "none";
     }
   });
+  
+  // Close popup when clicking "Get Directions" button
+  const mapBtn = document.querySelector('#locationPopup a');
+  if (mapBtn) {
+    mapBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+  }
 });
-const mapBtn = document.querySelector('#locationPopup a');
-
-if (mapBtn) {
-  mapBtn.addEventListener('click', () => {
-    document.getElementById('locationPopup').style.display = 'none';
-  });
-}
+// Add this to your script.js
+console.log("Team section exists:", document.querySelector('#team'));
+console.log("Team section visibility:", document.querySelector('#team').offsetParent !== null);
